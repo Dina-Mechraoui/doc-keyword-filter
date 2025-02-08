@@ -22,10 +22,12 @@ Doc Keyword Filter is a Python script designed to scan multiple `.doc` files in 
 
 1. **Python 3.x**  
    If Python is not installed, install it using Homebrew:
+   ```bash
    brew install python
 
-2. **Antiword (Required for .doc files)**  
+3. **Antiword (Required for .doc files)**  
    If Python is not installed, install it using Homebrew:
+   ```bash
    brew install antiword
 
 ---
@@ -36,9 +38,10 @@ Doc Keyword Filter is a Python script designed to scan multiple `.doc` files in 
 2. Navigate to the directory where the script is located.
 3. Add the `directory path`, `keyword` and the `output folder name` to the script.
 4. run the script
+   ```bash
     python script.py
-5. The script will scan all .doc files in the specified directory.
-6. Any file containing the keyword will be moved to the output directory within the same directory.
+6. The script will scan all .doc files in the specified directory.
+7. Any file containing the keyword will be moved to the output directory within the same directory.
 
 ---
 
