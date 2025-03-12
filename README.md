@@ -1,8 +1,7 @@
-# **Doc Keyword Filter**
+# **Doc Filter**
 
-## **Overview**
+**Doc Filter** is a Python script that scans `.doc` files for a specified keyword and moves matching files to a designated folder.
 
-**Doc Keyword Filter** is a Python script designed to efficiently scan multiple `.doc` files in a specified directory, identify those containing a given keyword, and move the matching files to a designated folder. This tool is particularly useful for organizing large collections of Microsoft Word documents.
 
 ## **Features**
 - **Bulk Processing** – Scans multiple `.doc` files at once.
@@ -12,37 +11,44 @@
 - **Optimized for macOS** – Utilizes `antiword` for efficient document parsing.
 - **Designed for Large Collections** – Handles large volumes of documents effectively.
 
+
 ## **Installation**
-### **Prerequisites**
-Ensure you have the following installed on your system:
-1. **Python 3.x**  
-   Install Python using Homebrew (if not already installed):  
-   ```bash
+
+
+### **Option 1 : Install via Release**
+1. Go to the Releases page and download the release archive.
+2. Extract the archive to your desired location.
+3. If you're on macOS, simply double-click on script.app to launch the application.
+### **Option 2 : Install via Git Clone**
+Ensure you have **Python 3.x**   installed on your system: 
+```bash
    brew install python
-   ```
-2. **Antiword** (Required for `.doc` file processing)  
-   Install Antiword using Homebrew:  
-   ```bash
-   brew install antiword
-   ```
+```
+### **Steps**
+1. **Clone the repository:**
+  ```bash
+  git clone git@github.com:Dina-Mechraoui/doc-keyword-filter.git
+  cd doc-keyword-filter
+```
+2. **Run the application:**
+  ```bash
+  python script.py
+  ```
+
 
 ## **Usage**
-1. **Place** all `.doc` files in a directory of your choice.
-2. **Open** a terminal and navigate to the directory where the script is located.
-3. **Run** the script using the following command:
-   ```bash
-   python script.py --directory /path/to/folder --keyword "search_term"
-   ```
-4. **(Optional)** Specify a custom output folder name:
-   ```bash
-   python script.py --directory /path/to/folder --keyword "search_term" --output "custom_folder_name"
-   ```
-5. The script will scan all `.doc` files in the specified directory.
-6. Any file containing the keyword will be moved to the output directory within the same directory.
+1. Launch the Application
+2. Select a Directory (files with .doc)
+3. Enter a Keyword
+4. click the 'Start Search' button
+
+## **Screenshot of the App**
+![App Screenshot](DocFilter.png)
+
 
 ## **Future Improvements**
 - Extend support to `.docx` files.
 - Expand compatibility to Windows and Linux.
 
 ## **🤝 Contributing**
-Contributions are welcome! 🎉 If you'd like to suggest improvements, report issues, or contribute code, please feel free to **open an issue** or **submit a pull request**.
+Contributions are welcome! If you'd like to suggest improvements, report issues, or contribute code, please feel free to **open an issue** or **submit a pull request**.
